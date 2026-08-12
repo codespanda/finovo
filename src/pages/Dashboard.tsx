@@ -92,7 +92,7 @@ export function Dashboard() {
     <div className="flex flex-col gap-5">
       <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight text-foreground">Good morning, Deepak! 👋</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-foreground">Good morning, John! 👋</h1>
           <p className="text-muted-foreground mt-1 text-sm">Here&apos;s what&apos;s happening with your business today.</p>
         </div>
         <Button variant="outline" className="w-fit">
