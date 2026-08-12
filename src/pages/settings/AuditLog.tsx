@@ -16,10 +16,10 @@ const actionColors: Record<string, "success" | "info" | "warning" | "danger"> = 
 }
 
 const logs = [
-  { time: "30 May 2025, 04:12 PM", user: "Deepak Kumar", action: "Updated", module: "Invoices", details: "Updated INV-25-26-1024", ip: "103.25.14.201" },
+  { time: "30 May 2025, 04:12 PM", user: "John Doe", action: "Updated", module: "Invoices", details: "Updated INV-25-26-1024", ip: "103.25.14.201" },
   { time: "30 May 2025, 03:40 PM", user: "Priya Sharma", action: "Created", module: "Bills", details: "Created BILL/25-26/1056", ip: "103.25.14.188" },
   { time: "30 May 2025, 02:15 PM", user: "Rahul Mehta", action: "Logged In", module: "Auth", details: "Successful login", ip: "49.207.10.5" },
-  { time: "29 May 2025, 06:50 PM", user: "Deepak Kumar", action: "Role Changed", module: "Users & Roles", details: "Neha Kapoor role changed to Sales Executive", ip: "103.25.14.201" },
+  { time: "29 May 2025, 06:50 PM", user: "John Doe", action: "Role Changed", module: "Users & Roles", details: "Neha Kapoor role changed to Sales Executive", ip: "103.25.14.201" },
   { time: "29 May 2025, 05:20 PM", user: "Amit Verma", action: "Deleted", module: "Expenses", details: "Deleted expense claim EXP-341", ip: "117.99.32.44" },
   { time: "29 May 2025, 11:30 AM", user: "Priya Sharma", action: "Updated", module: "Company Profile", details: "Updated business address", ip: "103.25.14.188" },
   { time: "28 May 2025, 09:05 AM", user: "Rahul Mehta", action: "Created", module: "Purchase Orders", details: "Created PO-458", ip: "49.207.10.5" },

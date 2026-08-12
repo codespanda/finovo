@@ -21,7 +21,7 @@ const contacts = [
   { id: "CUST-1002", name: "Sunrise Industries", type: "Customer", email: "info@sunrisein.com", phone: "+91 91234 56789", outstanding: 85600, status: "Active", href: null },
   { id: "SUP-1001", name: "Global Traders", type: "Supplier", email: "sales@globaltraders.com", phone: "+91 99887 66554", outstanding: -45250, status: "Active", href: "/contacts/suppliers/SUP-1001" },
   { id: "SUP-1002", name: "Office Essentials", type: "Supplier", email: "contact@officeess.com", phone: "+91 97654 32109", outstanding: -12840, status: "Active", href: null },
-  { id: "EMP-1001", name: "Deepak Kumar", type: "Employee", email: "deepak.kumar@acme.com", phone: "+91 98765 43210", outstanding: 0, status: "Active", href: null },
+  { id: "EMP-1001", name: "John Doe", type: "Employee", email: "john.doe@acme.com", phone: "+91 98765 43210", outstanding: 0, status: "Active", href: null },
   { id: "CUST-1003", name: "Webline Consulting", type: "Customer", email: "hello@webline.in", phone: "+91 99876 54321", outstanding: 32750, status: "Inactive", href: null },
 ]
 

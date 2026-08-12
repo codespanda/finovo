@@ -17,7 +17,7 @@ const items = [
 const activity = [
   { icon: CheckCircle2, title: "Paid", desc: "Payment of ₹75,000 received via HDFC Bank", time: "22 May 2025, 10:30 AM", color: "text-success-foreground" },
   { icon: Send, title: "Sent", desc: "Invoice sent to john.doe@acmecorp.com", time: "20 May 2025, 04:15 PM", color: "text-info-foreground" },
-  { icon: FileEdit, title: "Created", desc: "Invoice created by Deepak Kumar", time: "20 May 2025, 11:20 AM", color: "text-purple-foreground" },
+  { icon: FileEdit, title: "Created", desc: "Invoice created by John Doe", time: "20 May 2025, 11:20 AM", color: "text-purple-foreground" },
 ]
 
 export function InvoiceDetail() {

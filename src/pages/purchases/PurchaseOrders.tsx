@@ -57,7 +57,7 @@ const activities = [
   { text: "PO-10045 approved for Tech Solutions Pvt. Ltd.", time: "20 May 2025, 11:30 AM", color: "text-success-foreground" },
   { text: "PO-10044 marked as received", time: "18 May 2025, 03:10 PM", color: "text-info-foreground" },
   { text: "PO-10043 awaiting approval", time: "16 May 2025, 09:45 AM", color: "text-warning-foreground" },
-  { text: "PO-10039 cancelled by Deepak Kumar", time: "05 May 2025, 02:20 PM", color: "text-destructive" },
+  { text: "PO-10039 cancelled by John Doe", time: "05 May 2025, 02:20 PM", color: "text-destructive" },
 ]
 
 const orderTabs = [

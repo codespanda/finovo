@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Switch } from "@/components/ui/switch"
 import { Field } from "@/components/shared/FormDialog"
 import { useTheme } from "@/components/layout/ThemeProvider"
+import { maskEmail, maskPhone } from "@/lib/format"
 
 export function UserProfileDialog({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false)
@@ -32,7 +33,7 @@ export function UserProfileDialog({ children }: { children: ReactNode }) {
 
         <div className="flex items-center gap-4">
           <Avatar className="size-16">
-            <AvatarFallback className="bg-primary/10 text-primary text-lg">DK</AvatarFallback>
+            <AvatarFallback className="bg-primary/10 text-primary text-lg">JD</AvatarFallback>
           </Avatar>
           <div className="flex flex-col gap-1.5">
             <Button variant="outline" size="sm" className="w-fit"><Upload className="size-3.5" /> Upload Photo</Button>
@@ -41,10 +42,10 @@ export function UserProfileDialog({ children }: { children: ReactNode }) {
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <Field label="Full Name"><Input defaultValue="Deepak Kumar" /></Field>
+          <Field label="Full Name"><Input defaultValue="John Doe" /></Field>
           <Field label="Job Title"><Input defaultValue="Finance Manager" /></Field>
-          <Field label="Email"><Input type="email" defaultValue="deepak.kumar@acme.com" /></Field>
-          <Field label="Phone"><Input type="tel" defaultValue="+91 98765 43210" /></Field>
+          <Field label="Email"><Input type="email" value={maskEmail("john.doe@acme.com")} readOnly /></Field>
+          <Field label="Phone"><Input type="tel" value={maskPhone("+91 98765 43210")} readOnly /></Field>
           <Field label="Department">
             <Select defaultValue="finance">
               <SelectTrigger className="w-full"><SelectValue /></SelectTrigger>

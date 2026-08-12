@@ -189,13 +189,13 @@ export function Topbar() {
             <button className="relative shrink-0">
               <Avatar className="size-8">
                 <AvatarImage src="" />
-                <AvatarFallback className="bg-primary/10 text-primary">DK</AvatarFallback>
+                <AvatarFallback className="bg-primary/10 text-primary">JD</AvatarFallback>
               </Avatar>
               <span className="border-background absolute -right-0.5 -bottom-0.5 size-2.5 rounded-full border-2 bg-success" />
             </button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Deepak Kumar</DropdownMenuLabel>
+            <DropdownMenuLabel>John Doe</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <UserProfileDialog>
               <DialogTrigger asChild>

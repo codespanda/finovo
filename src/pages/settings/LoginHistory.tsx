@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 
 const logins = [
-  { icon: Laptop, user: "Deepak Kumar", device: "Chrome on macOS", ip: "103.25.14.201", location: "Bengaluru, India", time: "30 May 2025, 10:12 AM", status: "Success" },
+  { icon: Laptop, user: "John Doe", device: "Chrome on macOS", ip: "103.25.14.201", location: "Bengaluru, India", time: "30 May 2025, 10:12 AM", status: "Success" },
   { icon: Smartphone, user: "Priya Sharma", device: "Safari on iOS", ip: "103.25.14.188", location: "Bengaluru, India", time: "30 May 2025, 09:45 AM", status: "Success" },
   { icon: Monitor, user: "Rahul Mehta", device: "Edge on Windows", ip: "49.207.10.5", location: "Mumbai, India", time: "29 May 2025, 06:30 PM", status: "Success" },
   { icon: Laptop, user: "Amit Verma", device: "Chrome on Windows", ip: "117.99.32.44", location: "Pune, India", time: "29 May 2025, 03:15 PM", status: "Failed" },

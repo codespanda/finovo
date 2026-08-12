@@ -26,7 +26,7 @@ const roleColors: Record<string, "purple" | "info" | "success" | "warning"> = {
 }
 
 const users = [
-  { name: "Deepak Kumar", email: "deepak@codespanda.com", role: "Owner", status: "Active", lastActive: "Just now" },
+  { name: "John Doe", email: "john.doe@codespanda.com", role: "Owner", status: "Active", lastActive: "Just now" },
   { name: "Priya Sharma", email: "priya@codespanda.com", role: "Admin", status: "Active", lastActive: "2 hours ago" },
   { name: "Rahul Mehta", email: "rahul@codespanda.com", role: "Accountant", status: "Active", lastActive: "1 day ago" },
   { name: "Neha Kapoor", email: "neha@codespanda.com", role: "Sales Executive", status: "Active", lastActive: "3 days ago" },
