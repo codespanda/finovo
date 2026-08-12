@@ -4,7 +4,7 @@ A free, open-source React accounting/ERP admin dashboard — invoicing, purchase
 
 ![Finovo dashboard](public/og/dashboard.png)
 
-**[Live Preview](https://finovo.codespanda.com/)** · **[Docs](https://finovo.codespanda.com/docs)** · **[GitHub](https://github.com/codespanda/finovo)**
+**[Live Preview](https://finovo.codespanda.com/)** · **[Documentation](https://finovo.codespanda.com/docs)** · **[Template Showcase](https://claude.ai/code/artifact/baa5935f-2b97-4812-9286-a4d1870ea289)**
 
 ## What's included
 
@@ -36,7 +36,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173).
+Open [http://localhost:5173](http://localhost:5173). See the full [documentation](https://finovo.codespanda.com/docs) for project structure, available routes, and theming.
 
 ## Notes
 
