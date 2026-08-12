@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import {
   Menu,
   Search,
+  X,
   Plus,
   ChevronDown,
   Building2,
@@ -25,6 +26,7 @@ import {
   Wallet,
 } from "lucide-react"
 
+import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { DialogTrigger } from "@/components/ui/dialog"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
@@ -89,6 +91,7 @@ const createGroups = [
 
 export function Topbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const navigate = useNavigate()
 
@@ -97,7 +100,7 @@ export function Topbar() {
       <Button
         variant="ghost"
         size="icon"
-        className="lg:hidden"
+        className={cn("lg:hidden", mobileSearchOpen && "hidden")}
         onClick={() => setMobileOpen(true)}
       >
         <Menu className="size-5" />
@@ -109,22 +112,38 @@ export function Topbar() {
         </SheetContent>
       </Sheet>
 
-      <div className="relative hidden max-w-md flex-1 md:block">
+      <div className={cn("relative max-w-md flex-1", mobileSearchOpen ? "block" : "hidden md:block")}>
         <Search className="text-muted-foreground absolute top-1/2 left-3 size-4 -translate-y-1/2" />
         <input
+          autoFocus={mobileSearchOpen}
           placeholder="Search transactions, invoices, contacts..."
-          className="border-input bg-muted/50 h-9 w-full rounded-lg border pr-14 pl-9 text-sm outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring/40"
+          className="border-input bg-muted/50 h-9 w-full rounded-lg border pr-9 pl-9 text-sm outline-none placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring/40 md:pr-14"
         />
-        <kbd className="text-muted-foreground bg-card absolute top-1/2 right-2 -translate-y-1/2 rounded border px-1.5 py-0.5 text-[10px] font-medium">
-          ⌘K
-        </kbd>
+        {mobileSearchOpen ? (
+          <button
+            type="button"
+            onClick={() => setMobileSearchOpen(false)}
+            className="text-muted-foreground absolute top-1/2 right-3 -translate-y-1/2 md:hidden"
+          >
+            <X className="size-4" />
+          </button>
+        ) : (
+          <kbd className="text-muted-foreground bg-card absolute top-1/2 right-2 hidden -translate-y-1/2 rounded border px-1.5 py-0.5 text-[10px] font-medium md:block">
+            ⌘K
+          </kbd>
+        )}
       </div>
 
-      <Button size="icon" variant="ghost" className="md:hidden ml-auto">
+      <Button
+        size="icon"
+        variant="ghost"
+        className={cn("ml-auto md:hidden", mobileSearchOpen && "hidden")}
+        onClick={() => setMobileSearchOpen(true)}
+      >
         <Search className="size-5" />
       </Button>
 
-      <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
+      <div className={cn("ml-auto flex items-center gap-1.5 sm:gap-2", mobileSearchOpen && "hidden md:flex")}>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button size="icon" className="sm:h-9 sm:w-auto sm:gap-2 sm:px-4">
