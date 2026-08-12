@@ -4,7 +4,7 @@ A free, open-source React accounting/ERP admin dashboard — invoicing, purchase
 
 ![Finovo dashboard](public/og/dashboard.png)
 
-**[Live Preview](https://finovo.codespanda.com/)** · **[Documentation](https://finovo.codespanda.com/docs)** · **[Template Showcase](https://claude.ai/code/artifact/baa5935f-2b97-4812-9286-a4d1870ea289)**
+**[Live Preview](https://finovo.codespanda.com/)** · **[Documentation](https://finovo.codespanda.com/docs)**
 
 ## What's included
 
