@@ -1,32 +1,47 @@
-# React + TypeScript + Vite
+# Finovo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A free, open-source React accounting/ERP admin dashboard — invoicing, purchases, banking, expenses, payroll, inventory, projects, GST/TDS tax filing, reports and contacts, plus a fully-tabbed settings area.
 
-Currently, two official plugins are available:
+![Finovo dashboard](public/og/dashboard.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[Live Preview](https://finovo.codespanda.com/)** · **[Docs](https://finovo.codespanda.com/docs)** · **[GitHub](https://github.com/codespanda/finovo)**
 
-## React Compiler
+## What's included
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dashboard** — cash & bank balances, receivables/payables, cash flow and expense trend charts
+- **Accounting** — journal entries, chart of accounts, cash flow, income & expense summaries
+- **Sales** — invoices, estimates, credit notes, customers, payments receivable, products & services
+- **Purchases** — bills, purchase orders, vendors, debit notes, payables, recurring bills
+- **Banking** — bank accounts, bank feed, reconciliation, auto-match rules, statements
+- **Expenses** — expense claims, categories, approval workflows, mileage, tax deductions
+- **Payroll** — employees, payroll runs, pay slips, statutory taxes & deductions
+- **Inventory** — items, categories, warehouses, stock adjustments, transfers, stock count, batch/serial tracking
+- **Projects** — tasks, timesheets, milestones, team, calendar, files, project billing
+- **Tax** — full GST suite (GSTR-1/3B, e-way bills, ITC, reconciliation) and TDS suite (challans, deductors/deductees, Forms 130/131/133, correction returns, PAN verification)
+- **Reports** — P&L, balance sheet, cash flow, AR/AP aging, and per-module report centers
+- **Contacts** — unified customer/supplier/employee directory with groups
+- **Settings** — company profile, users & roles, notifications, security, audit log and more
+- **Auth screens** — sign in and sign up pages outside the dashboard shell
 
-## Expanding the Oxlint configuration
+## Tech stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+React · Vite · TypeScript · Tailwind CSS · shadcn/ui · radix-ui · React Router · Recharts
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Getting started
+
+```bash
+git clone https://github.com/codespanda/finovo.git
+cd finovo
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open [http://localhost:5173](http://localhost:5173).
+
+## Notes
+
+This is a UI-only demo — every page is driven by static TypeScript fixtures across `src/pages`, with no backend or persistence layer. Wiring up your own API is on you.
+
+## License
+
+MIT
