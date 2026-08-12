@@ -127,10 +127,10 @@ export function Topbar() {
       <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button className="hidden sm:inline-flex">
+            <Button size="icon" className="sm:h-9 sm:w-auto sm:gap-2 sm:px-4">
               <Plus className="size-4" />
-              Create
-              <ChevronDown className="size-3.5 opacity-80" />
+              <span className="hidden sm:inline">Create</span>
+              <ChevronDown className="hidden size-3.5 opacity-80 sm:inline" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end" className="w-[21rem] max-h-[80vh] overflow-y-auto">
@@ -153,9 +153,6 @@ export function Topbar() {
             ))}
           </DropdownMenuContent>
         </DropdownMenu>
-        <Button size="icon" className="sm:hidden">
-          <Plus className="size-4" />
-        </Button>
 
         <Button variant="ghost" size="icon" className="hidden text-muted-foreground sm:inline-flex" onClick={toggleTheme}>
           {theme === "dark" ? <Sun className="size-5" /> : <Moon className="size-5" />}
